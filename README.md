@@ -16,12 +16,8 @@ pip install -r requirements.txt
 
 ## Usage
 
-Fill **.env** file with your data.
-Run create_text_data.py to scrape comments from Reddit. Adjust the subreddit or other parameters as needed.
-The subreddits is specified in **crawler.py** file. Default is **stocks+investing+stockmarket+wallstreetbets**
-The collected data will be stored in local files.
-Creating the Chroma Database:
-Execute create_chromadb.py to create a Chroma database.
-Running the Chatbot:
-Use rag.py to run the chatbot.
-The chatbot will interact with an LLM and retrieve relevant information from the Chroma database.
+1. Install **pip install -r requirements.txt**
+2. Fill your **.env** file with your data.
+3. Run **create_text_data.py** to scrape comments from Reddit. Adjust the subreddit or other parameters as needed. The default subreddits are specified in the **crawler.py** file (stocks, investing, stockmarket, wallstreetbets).
+4. To create the Chroma Database, execute **create_chromadb.py**.
+5. To run the chatbot, use **rag.py**. The chatbot will interact with an LLM and retrieve relevant information from the Chroma database.
